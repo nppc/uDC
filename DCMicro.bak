@@ -1,0 +1,315 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:KiCadCustomLibraries
+LIBS:DCMicro-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM2734 U1
+U 1 1 5AABE264
+P 5750 4100
+F 0 "U1" H 5900 4000 60  0000 C CNN
+F 1 "LM2734" H 5750 4700 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23-6" H 5750 4100 60  0001 C CNN
+F 3 "" H 5750 4100 60  0001 C CNN
+	1    5750 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L L L1
+U 1 1 5AABE31B
+P 6950 3850
+F 0 "L1" V 6900 3850 50  0000 C CNN
+F 1 "L" V 7025 3850 50  0000 C CNN
+F 2 "KiCadCustomLibs:Inductor-LPS4012" H 6950 3850 50  0001 C CNN
+F 3 "" H 6950 3850 50  0001 C CNN
+	1    6950 3850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D D1
+U 1 1 5AABE518
+P 6950 3550
+F 0 "D1" H 6950 3650 50  0000 C CNN
+F 1 "1N4148" H 6950 3450 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-523" H 6950 3550 50  0001 C CNN
+F 3 "" H 6950 3550 50  0001 C CNN
+	1    6950 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3700 6200 3550
+Wire Wire Line
+	6200 3550 6800 3550
+Wire Wire Line
+	6200 3850 6800 3850
+Wire Wire Line
+	7100 3550 7400 3550
+Wire Wire Line
+	7400 3550 7400 3850
+Wire Wire Line
+	7100 3850 8250 3850
+$Comp
+L D_Schottky D2
+U 1 1 5AABE682
+P 6650 4000
+F 0 "D2" V 6650 3850 50  0000 C CNN
+F 1 "MBR230LSFT1G" V 6750 4300 50  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-123F" H 6650 4000 50  0001 C CNN
+F 3 "" H 6650 4000 50  0001 C CNN
+	1    6650 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 5AABE760
+P 5750 4300
+F 0 "#PWR2" H 5750 4050 50  0001 C CNN
+F 1 "GND" H 5750 4150 50  0000 C CNN
+F 2 "" H 5750 4300 50  0001 C CNN
+F 3 "" H 5750 4300 50  0001 C CNN
+	1    5750 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR3
+U 1 1 5AABE7C2
+P 6650 4150
+F 0 "#PWR3" H 6650 3900 50  0001 C CNN
+F 1 "GND" H 6650 4000 50  0000 C CNN
+F 2 "" H 6650 4150 50  0001 C CNN
+F 3 "" H 6650 4150 50  0001 C CNN
+	1    6650 4150
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 3850
+$Comp
+L C C2
+U 1 1 5AAF8AB1
+P 6400 3700
+F 0 "C2" H 6425 3800 50  0000 L CNN
+F 1 "10n" H 6425 3600 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 6438 3550 50  0001 C CNN
+F 3 "" H 6400 3700 50  0001 C CNN
+	1    6400 3700
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 3550
+Connection ~ 6400 3850
+$Comp
+L R R1
+U 1 1 5AAF8BD5
+P 5150 3850
+F 0 "R1" H 5250 3850 50  0000 C CNN
+F 1 "100K" V 5150 3850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 5080 3850 50  0001 C CNN
+F 3 "" H 5150 3850 50  0001 C CNN
+	1    5150 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 3700 5300 3700
+Wire Wire Line
+	5300 4000 5150 4000
+$Comp
+L R R2
+U 1 1 5AAF8E93
+P 7400 4000
+F 0 "R2" H 7500 4000 50  0000 C CNN
+F 1 "1%" V 7400 4000 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 7330 4000 50  0001 C CNN
+F 3 "" H 7400 4000 50  0001 C CNN
+	1    7400 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 7400 3850
+$Comp
+L R R3
+U 1 1 5AAF8F98
+P 7400 4300
+F 0 "R3" H 7500 4300 50  0000 C CNN
+F 1 "1%" V 7400 4300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402_NoSilk" V 7330 4300 50  0001 C CNN
+F 3 "" H 7400 4300 50  0001 C CNN
+	1    7400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4000 6200 4350
+Wire Wire Line
+	6200 4350 7250 4350
+Wire Wire Line
+	7250 4350 7250 4150
+Connection ~ 7400 4150
+$Comp
+L GND #PWR4
+U 1 1 5AAF9033
+P 7400 4450
+F 0 "#PWR4" H 7400 4200 50  0001 C CNN
+F 1 "GND" H 7400 4300 50  0000 C CNN
+F 2 "" H 7400 4450 50  0001 C CNN
+F 3 "" H 7400 4450 50  0001 C CNN
+	1    7400 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 5AAF9136
+P 7700 4000
+F 0 "C3" H 7725 4100 50  0000 L CNN
+F 1 "1n" H 7725 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402_NoSilk" H 7738 3850 50  0001 C CNN
+F 3 "" H 7700 4000 50  0001 C CNN
+	1    7700 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5AAF9338
+P 4800 3850
+F 0 "C1" H 4825 3950 50  0000 L CNN
+F 1 "10uf" H 4825 3750 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 4838 3700 50  0001 C CNN
+F 3 "" H 4800 3850 50  0001 C CNN
+	1    4800 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 5AAF93D5
+P 8000 4000
+F 0 "C4" H 8025 4100 50  0000 L CNN
+F 1 "22uf" H 8025 3900 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 8038 3850 50  0001 C CNN
+F 3 "" H 8000 4000 50  0001 C CNN
+	1    8000 4000
+	1    0    0    -1  
+$EndComp
+Connection ~ 7700 3850
+Connection ~ 5150 3700
+Wire Wire Line
+	4800 4000 4800 4300
+$Comp
+L Conn_01x01 J3
+U 1 1 5AAF9745
+P 8450 3850
+F 0 "J3" H 8450 3950 50  0000 C CNN
+F 1 "V_OUT" H 8650 3850 50  0000 C CNN
+F 2 "KiCadCustomLibs:ESC_PWR_PAD" H 8450 3850 50  0001 C CNN
+F 3 "" H 8450 3850 50  0001 C CNN
+	1    8450 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Conn_01x01 J4
+U 1 1 5AAF97FD
+P 8450 4300
+F 0 "J4" H 8450 4400 50  0000 C CNN
+F 1 "GND_OUT" H 8700 4300 50  0000 C CNN
+F 2 "KiCadCustomLibs:ESC_PWR_PAD" H 8450 4300 50  0001 C CNN
+F 3 "" H 8450 4300 50  0001 C CNN
+	1    8450 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR5
+U 1 1 5AAF9846
+P 8250 4300
+F 0 "#PWR5" H 8250 4050 50  0001 C CNN
+F 1 "GND" H 8250 4150 50  0000 C CNN
+F 2 "" H 8250 4300 50  0001 C CNN
+F 3 "" H 8250 4300 50  0001 C CNN
+	1    8250 4300
+	1    0    0    -1  
+$EndComp
+Connection ~ 8000 3850
+$Comp
+L Conn_01x01 J2
+U 1 1 5AAF9980
+P 4600 4300
+F 0 "J2" H 4600 4400 50  0000 C CNN
+F 1 "GND_IN" H 4850 4300 50  0000 C CNN
+F 2 "KiCadCustomLibs:ESC_PWR_PAD" H 4600 4300 50  0001 C CNN
+F 3 "" H 4600 4300 50  0001 C CNN
+	1    4600 4300
+	-1   0    0    1   
+$EndComp
+Connection ~ 4800 4300
+$Comp
+L Conn_01x01 J1
+U 1 1 5AAF9B23
+P 4600 3700
+F 0 "J1" H 4600 3800 50  0000 C CNN
+F 1 "V_IN" H 4850 3700 50  0000 C CNN
+F 2 "KiCadCustomLibs:ESC_PWR_PAD" H 4600 3700 50  0001 C CNN
+F 3 "" H 4600 3700 50  0001 C CNN
+	1    4600 3700
+	-1   0    0    1   
+$EndComp
+Connection ~ 4800 3700
+$Comp
+L GND #PWR1
+U 1 1 5AAF9CCC
+P 4800 4300
+F 0 "#PWR1" H 4800 4050 50  0001 C CNN
+F 1 "GND" H 4800 4150 50  0000 C CNN
+F 2 "" H 4800 4300 50  0001 C CNN
+F 3 "" H 4800 4300 50  0001 C CNN
+	1    4800 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 4150 7700 4150
+Wire Wire Line
+	8250 4300 8000 4300
+Wire Wire Line
+	8000 4300 8000 4150
+Connection ~ 8250 4300
+Text Label 4800 3700 0    60   ~ 0
+VIN
+Text Label 8000 3850 0    60   ~ 0
+VOUT
+$EndSCHEMATC
