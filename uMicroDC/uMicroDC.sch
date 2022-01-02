@@ -1,0 +1,253 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L KiCadCustomLibraries:TPS562231 U1
+U 1 1 5EB10FB3
+P 1500 1050
+F 0 "U1" H 1500 1417 50  0000 C CNN
+F 1 "AP62200" H 1500 1326 50  0000 C CNN
+F 2 "KiCadCustomLibs:SOT-563" H 1550 800 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps563200.pdf" H 1500 1050 50  0001 C CNN
+	1    1500 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 5EB1146C
+P 700 1100
+F 0 "C2" H 815 1146 50  0000 L CNN
+F 1 "10uF" H 815 1055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 738 950 50  0001 C CNN
+F 3 "~" H 700 1100 50  0001 C CNN
+	1    700  1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C6
+U 1 1 5EB1700A
+P 2900 1100
+F 0 "C6" H 3015 1146 50  0000 L CNN
+F 1 "47uF" H 3015 1055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2938 950 50  0001 C CNN
+F 3 "~" H 2900 1100 50  0001 C CNN
+	1    2900 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5EB175B8
+P 2100 1100
+F 0 "C5" H 2215 1146 50  0000 L CNN
+F 1 "100n" H 2215 1055 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H 2138 950 50  0001 C CNN
+F 3 "~" H 2100 1100 50  0001 C CNN
+	1    2100 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 5EB17F4A
+P 2500 1100
+F 0 "R2" H 2430 1054 50  0000 R CNN
+F 1 "36K" H 2430 1145 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" V 2430 1100 50  0001 C CNN
+F 3 "~" H 2500 1100 50  0001 C CNN
+	1    2500 1100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 5EB18468
+P 2500 1500
+F 0 "R3" H 2430 1454 50  0000 R CNN
+F 1 "10K" H 2430 1545 50  0000 R CNN
+F 2 "Resistors_SMD:R_0603" V 2430 1500 50  0001 C CNN
+F 3 "~" H 2500 1500 50  0001 C CNN
+	1    2500 1500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 1250 2500 1300
+Wire Wire Line
+	2500 1300 1900 1300
+Wire Wire Line
+	1900 1300 1900 1150
+Connection ~ 2500 1300
+Wire Wire Line
+	2500 1300 2500 1350
+Wire Wire Line
+	1900 1050 1950 1050
+Wire Wire Line
+	1950 1050 1950 1250
+Wire Wire Line
+	1950 1250 2100 1250
+$Comp
+L Device:L L1
+U 1 1 5F82AEF9
+P 2300 950
+F 0 "L1" V 2490 950 50  0000 C CNN
+F 1 "4u7" V 2399 950 50  0000 C CNN
+F 2 "KiCadCustomLibs:XFL2006-inductor" H 2300 950 50  0001 C CNN
+F 3 "~" H 2300 950 50  0001 C CNN
+	1    2300 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1900 950  2100 950 
+Connection ~ 2100 950 
+Wire Wire Line
+	2100 950  2150 950 
+Wire Wire Line
+	2450 950  2500 950 
+Connection ~ 2500 950 
+Wire Wire Line
+	2500 950  2900 950 
+$Comp
+L power:GND #PWR016
+U 1 1 5EB329A6
+P 2500 1650
+F 0 "#PWR016" H 2500 1400 50  0001 C CNN
+F 1 "GND" H 2505 1477 50  0000 C CNN
+F 2 "" H 2500 1650 50  0001 C CNN
+F 3 "" H 2500 1650 50  0001 C CNN
+	1    2500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR019
+U 1 1 5EB33181
+P 2900 1650
+F 0 "#PWR019" H 2900 1400 50  0001 C CNN
+F 1 "GND" H 2905 1477 50  0000 C CNN
+F 2 "" H 2900 1650 50  0001 C CNN
+F 3 "" H 2900 1650 50  0001 C CNN
+	1    2900 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1650 2900 1250
+$Comp
+L power:GND #PWR011
+U 1 1 5EB3A2B6
+P 1500 1650
+F 0 "#PWR011" H 1500 1400 50  0001 C CNN
+F 1 "GND" H 1505 1477 50  0000 C CNN
+F 2 "" H 1500 1650 50  0001 C CNN
+F 3 "" H 1500 1650 50  0001 C CNN
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5F82AEFD
+P 700 1650
+F 0 "#PWR02" H 700 1400 50  0001 C CNN
+F 1 "GND" H 705 1477 50  0000 C CNN
+F 2 "" H 700 1650 50  0001 C CNN
+F 3 "" H 700 1650 50  0001 C CNN
+	1    700  1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	700  1250 700  1650
+Wire Wire Line
+	1500 1350 1500 1650
+Connection ~ 700  950 
+$Comp
+L power:VCC #PWR018
+U 1 1 5F8F6378
+P 2900 950
+F 0 "#PWR018" H 2900 800 50  0001 C CNN
+F 1 "VCC" H 2917 1123 50  0000 C CNN
+F 2 "" H 2900 950 50  0001 C CNN
+F 3 "" H 2900 950 50  0001 C CNN
+	1    2900 950 
+	1    0    0    -1  
+$EndComp
+Connection ~ 2900 950 
+$Comp
+L power:+12V #PWR01
+U 1 1 5F9588F0
+P 700 950
+F 0 "#PWR01" H 700 800 50  0001 C CNN
+F 1 "+12V" H 715 1123 50  0000 C CNN
+F 2 "" H 700 950 50  0001 C CNN
+F 3 "" H 700 950 50  0001 C CNN
+	1    700  950 
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	550  600  550  1950
+Wire Notes Line
+	550  1950 3250 1950
+Wire Notes Line
+	550  600  3250 600 
+Wire Notes Line
+	3250 600  3250 1950
+Text Notes 2700 950  0    50   ~ 0
+3.7v
+Wire Wire Line
+	700  950  1100 950 
+NoConn ~ 1100 1150
+Text Notes 800  1450 0    39   ~ 0
+EN: \nDon't connect to Vin.\nIt is logic input!
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 5FC652EE
+P 3900 1050
+F 0 "J1" H 3792 725 50  0000 C CNN
+F 1 "C" H 3792 816 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Angled_1x03_Pitch2.54mm" H 3900 1050 50  0001 C CNN
+F 3 "~" H 3900 1050 50  0001 C CNN
+	1    3900 1050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5FC65D92
+P 3700 1150
+F 0 "#PWR0101" H 3700 900 50  0001 C CNN
+F 1 "GND" H 3705 977 50  0000 C CNN
+F 2 "" H 3700 1150 50  0001 C CNN
+F 3 "" H 3700 1150 50  0001 C CNN
+	1    3700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0102
+U 1 1 5FC66064
+P 3700 950
+F 0 "#PWR0102" H 3700 800 50  0001 C CNN
+F 1 "VCC" H 3717 1123 50  0000 C CNN
+F 2 "" H 3700 950 50  0001 C CNN
+F 3 "" H 3700 950 50  0001 C CNN
+	1    3700 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR0103
+U 1 1 5FC66361
+P 3400 1050
+F 0 "#PWR0103" H 3400 900 50  0001 C CNN
+F 1 "+12V" H 3415 1223 50  0000 C CNN
+F 2 "" H 3400 1050 50  0001 C CNN
+F 3 "" H 3400 1050 50  0001 C CNN
+	1    3400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1050 3700 1050
+$EndSCHEMATC
